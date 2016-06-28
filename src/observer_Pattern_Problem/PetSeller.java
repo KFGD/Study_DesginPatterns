@@ -35,4 +35,10 @@ public class PetSeller implements Project{
 			customer.update();
 		}
 	}
+
+	@Override
+	public void removeCustomer(Observer customer) {
+		// TODO Auto-generated method stub
+		
+	}
 }

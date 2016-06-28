@@ -9,4 +9,6 @@ public interface Project {
 	void registerPet(AnimalType cat);
 
 	void notifyRegPetToCustomer(AnimalType type);
+
+	void removeCustomer(Observer customer);
 }

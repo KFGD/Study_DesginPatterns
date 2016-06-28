@@ -30,6 +30,16 @@ public class TestCode {
 		assertEquals(1, petSeller.getRegCustomerCount());
 	}
 	
+	//등록된 구매자 제거
+	@Test
+	public void removeCustomerOne(){
+		Observer customer = new Customer();
+		petSeller.registerCustomer(customer);
+		assertEquals(1, petSeller.getRegCustomerCount());
+		petSeller.removeCustomer(customer);
+		assertEquals(0, petSeller.getRegCustomerCount());
+	}
+	
 	//구매자의 관심 동물을 확인(Default=All)
 	@Test
 	public void checkCustomerInterest(){
